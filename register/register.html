@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Juego</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenedorSecundario">
+        <h1 class="titleRegister" >Registro de usuario</h1>
+        <form id="formularioRegistro" method="post">
+          <input id="nombre" name="nombre" class="inputsLogin" type="text" placeholder="nombre de usuario" />
+          <input id="password" name="password" class="inputsLogin" type="password" placeholder="contraseña" />
+          <input id="passwordRep" name="passwordRep" class="inputsLogin" type="password" placeholder="repetir contraseña" />
+          <button class="btn_acceder_registrarse" type="submit" >Registro</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="../login/login.html">Iniciar Sesión</a></p>
+      </div>
+    </div>
+    <script src="../controller/register.js"></script>
+  </body>
+</html>

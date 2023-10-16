@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Juego</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenedorSecundario">
+        <h1 class="titleLogin" >Iniciar Sesión</h1>
+        <form id="formularioLogin" method="post">
+          <input id="nombre" name="nombre" class="inputsLogin" type="text" placeholder="nombre de usuario" required/>
+          <input id="password" name="password" class="inputsLogin" type="password" placeholder="contraseña" required/>
+          <button class="btn_acceder_registrarse" type="submit" >Acceder</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="../register/register.html">Crear cuenta</a></p>
+        <div id="errorLogin" ></div>
+      </div>
+    </div>
+    <script src="../controller/login.js"></script>
+  </body>
+</html>

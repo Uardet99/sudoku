@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Registro y Login*/
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.btn_acceder_registrarse {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(14, 105, 133, 0.5);
+    transition: background-color 0.7s ease;
+}
+
+.btn_acceder_registrarse:hover {
+    background-color: rgb(120, 235, 235); /* Color ligeramente más claro al pasar el ratón */
+    transition: background-color 0.7s ease, color 0.5s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedorSecundario {
+    background-color: lightskyblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsLogin {
+    display: block; /* Hacer que los inputs sean elementos de bloque */
+    margin-bottom: 10px;
+    padding: 10px 20px;    /* Espaciado entre los elementos input */
+    border-radius: 5px;
+    border: none;
+}
+
+
+.titleRegister, .titleLogin {
+    color: white;
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*Tablero del sudoku*/
+table {
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contenedorTablero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+table tr:nth-child(3n+1) td {
+    border-top: 5px solid black;
+}
+
+table tr:nth-child(3n) td {
+    border-bottom: 5px solid black;
+}
+
+table tr td:nth-child(3n+1) {
+    border-left: 5px solid black;
+}
+
+table tr td:nth-child(3n) {
+    border-right: 5px solid black;
+}
